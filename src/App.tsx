@@ -38,9 +38,25 @@ const App = () => {
         }}
         onClick={scrollToTop}
       >
-        <svg className="radial-progress" viewBox="0 0 100 100">
-          <circle className="radial-progress-circle" cx="50" cy="50" r="45" ref={circleRef} />
-        </svg>
+        <div className="scroll-top-box">
+          <svg className="radial-progress" viewBox="0 0 50 50">
+            <circle className="radial-progress-circle" ref={circleRef} cx="25" cy="25" r="20" />
+          </svg>
+          <svg
+            className="scroll-top-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#444444"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+        </div>
       </div>
       <div>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit libero, aliquam qui odio consectetur
