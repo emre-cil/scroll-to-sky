@@ -36,22 +36,55 @@ export const ScrollTo = () => {
       style={{
         opacity: scrolling ? 1 : 0,
         pointerEvents: scrolling ? 'auto' : 'none',
+        position: 'fixed',
+        bottom: '25px',
+        right: '25px',
+        transition: 'opacity 0.1s ease-in-out',
+        cursor: 'pointer',
+        zIndex: 9999,
+        width: '50px',
+        height: '50px',
       }}
       onClick={scrollToTop}
     >
-      <div className="scroll-top-box">
+      <div
+        className="scroll-top-box"
+        style={{
+          position: 'relative',
+        }}
+      >
         <svg className="radial-progress" viewBox="0 0 50 50">
-          <circle className="radial-progress-circle" ref={circleRef} cx="25" cy="25" r="20" />
+          <circle
+            className="radial-progress-circle"
+            ref={circleRef}
+            cx="25"
+            cy="25"
+            r="20"
+            style={{
+              fill: 'none',
+              stroke: '#444444',
+              strokeWidth: '3px',
+              strokeLinecap: 'round',
+              transform: 'rotate(-90deg)',
+              transformOrigin: '50% 50%',
+              transition: 'stroke-dashoffset 0.1s ease-in-out',
+            }}
+          />
         </svg>
         <svg
           className="scroll-top-arrow"
+          style={{
+            position: 'absolute',
+            top: '13px',
+            left: '13px',
+          }}
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
           viewBox="0 0 24 24"
           fill="none"
           stroke="#444444"
-          strokeWidth="2"
+          strokeWidth="3px"
           strokeLinecap="round"
           strokeLinejoin="round"
         >
