@@ -1,7 +1,11 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, FC } from 'react';
 import './style.css';
 
-export const ScrollTo = () => {
+interface ScrollToProps {
+  color?: string;
+}
+
+export const ScrollTo: FC<ScrollToProps> = ({ color = '#444444' }) => {
   const [scrolling, setScrolling] = useState(false);
   const circleRef = useRef<any>(null);
 
@@ -62,7 +66,7 @@ export const ScrollTo = () => {
             r="20"
             style={{
               fill: 'none',
-              stroke: '#444444',
+              stroke: color,
               strokeWidth: '3px',
               strokeLinecap: 'round',
               transform: 'rotate(-90deg)',
@@ -83,7 +87,7 @@ export const ScrollTo = () => {
           height="24"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#444444"
+          stroke={color}
           strokeWidth="3px"
           strokeLinecap="round"
           strokeLinejoin="round"

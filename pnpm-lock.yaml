@@ -7,9 +7,6 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
-  scroll-to-sky:
-    specifier: ^0.0.8
-    version: 0.0.8
 
 devDependencies:
   '@types/react':
@@ -931,29 +928,6 @@ packages:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
-    dev: false
-
-  /scroll-to-sky@0.0.6:
-    resolution: {integrity: sha512-MJWLoAyy+wuTEDYNKsI3Db+0dQB4h2+p9UWEuzIRKNa7ylCuY5q/w6TZR4LXOIS1keyROKtnX82xttYLf9f9GA==}
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /scroll-to-sky@0.0.7:
-    resolution: {integrity: sha512-O1zyZhb+k7CsFu5JczZk69Rw+2W5KKjkgpURC3xXwNW0daesgs8SE3XBoVd81tmjbKIwNv+/UGF9N8EmGI39Yg==}
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      scroll-to-sky: 0.0.6
-    dev: false
-
-  /scroll-to-sky@0.0.8:
-    resolution: {integrity: sha512-9bPbHUIm8ccEPy3I2dGi+L259pG7NDTIaZUMJdjspS2YAa26E65bdt/c8avieLZUJLKJULGDxH84wCh2eYTJJg==}
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      scroll-to-sky: 0.0.7
     dev: false
 
   /semver@7.3.8:

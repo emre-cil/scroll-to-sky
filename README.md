@@ -27,6 +27,29 @@ const App = () => {
 export default App;
 ```
 
+## 🚀 Props
+
+```tsx
+interface ScrollToProps {
+  color?: string;
+}
+```
+
+## 🚀 Demo
+
+```tsx
+import { ScrollTo } from 'scroll-to-sky';
+const App = () => {
+  return (
+    <div>
+      <ScrollTo color="#FFD95A" />
+    </div>
+  );
+};
+
+export default App;
+```
+
 ## 👏 Contributing
 
 If you have any questions or requests or want to contribute to `scroll-to-sky`, please write the [issue](https://github.com/emre-cil/scroll-to-sky/issues) or give me a Pull Request freely.
