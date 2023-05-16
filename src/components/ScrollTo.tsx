@@ -2,7 +2,7 @@ import { useEffect, useState, useRef, FC } from 'react';
 import './style.css';
 
 interface ScrollToProps {
-  color?: string;
+  color: string;
 }
 
 export const ScrollTo: FC<ScrollToProps> = ({ color = '#444444' }) => {
