@@ -14,8 +14,17 @@ $ pnpm add scroll-to-sky
 
 ## 🚀 How to use
 
-```ts
-import ScrollTo from 'scroll-to-sky';
+```tsx
+import { ScrollTo } from 'scroll-to-sky';
+const App = () => {
+  return (
+    <div>
+      <ScrollTo />
+    </div>
+  );
+};
+
+export default App;
 ```
 
 ## 👏 Contributing
