@@ -1,4 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
+import './style.css';
+
 export const ScrollTo = () => {
   const [scrolling, setScrolling] = useState(false);
   const circleRef = useRef<any>(null);
