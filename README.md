@@ -18,9 +18,10 @@ $ pnpm add scroll-to-sky
 import { ScrollTo } from 'scroll-to-sky';
 const App = () => {
   return (
-    <div>
+    <>
+      // any place does not matter
       <ScrollTo />
-    </div>
+    </>
   );
 };
 
@@ -31,7 +32,8 @@ export default App;
 
 ```tsx
 interface ScrollToProps {
-  color?: string;
+  color: string;
+  style?: React.CSSProperties;
 }
 ```
 
@@ -41,9 +43,15 @@ interface ScrollToProps {
 import { ScrollTo } from 'scroll-to-sky';
 const App = () => {
   return (
-    <div>
-      <ScrollTo color="#FFD95A" />
-    </div>
+    <>
+      // any place does not matter
+      <ScrollTo
+        style={{
+          left: 20,
+          bottom: 20,
+        }}
+      />
+    </>
   );
 };
 

@@ -3,9 +3,10 @@ import './style.css';
 
 interface ScrollToProps {
   color: string;
+  style?: React.CSSProperties;
 }
 
-export const ScrollTo: FC<ScrollToProps> = ({ color = '#444444' }) => {
+export const ScrollTo: FC<ScrollToProps> = ({ color = '#444444', style }) => {
   const [scrolling, setScrolling] = useState(false);
   const circleRef = useRef<any>(null);
 
@@ -45,9 +46,10 @@ export const ScrollTo: FC<ScrollToProps> = ({ color = '#444444' }) => {
         right: '25px',
         transition: 'opacity 0.1s ease-in-out',
         cursor: 'pointer',
-        zIndex: 9999,
+        zIndex: 9999999,
         width: '50px',
         height: '50px',
+        ...style,
       }}
       onClick={scrollToTop}
     >
